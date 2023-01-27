@@ -1,4 +1,3 @@
-# julie_lab10
 pipeline {
 
     agent {
@@ -44,11 +43,7 @@ pipeline {
             }
         }
 
-        stage('Code Build') {
-            steps {
-                 sh 'mvn install -Dmaven.test.skip=true'
-            }
-        }
+ 
 
         stage('Printing All Global Variables') {
             steps {
